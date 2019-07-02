@@ -1,5 +1,5 @@
 var liveData = [];
-$.getJSON('LiveData.json', function(data){
+$.getJSON('./LiveData.json', function(data){
 	liveData = data['contents'];
 });
 // 2. This code loads the IFrame Player API code asynchronously.
