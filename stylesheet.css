@@ -1,3 +1,6 @@
+body{
+	background-color: black;
+}
 #player {
 	width: 853px;
 	height: 480px;
