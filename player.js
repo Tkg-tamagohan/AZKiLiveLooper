@@ -1,49 +1,7 @@
-var liveData = {
-			"contents":[
-				{
-					"video":"ZVlBY2ZesEg",
-					"start":"2000",
-					"end":"3060",
-					"note":"Set list\nMy Dearest/supercell\nオレンジ/とらドラ！\nCreating world/AZKi\n"
-				},
-				{
-					"video":"_18K9CZjgGs",
-					"start":"2065",
-					"end":"3116",
-					"note":"Set list\nただ君に晴れ/ヨルシカ\nリアルメランコリー/AZKi\nCreating world/AZKi\n???/AZKi?\n"
-				},
-				{
-					"video":"giujAf5WV7k",
-					"start":"2028",
-					"end":"3330",
-					"note":"Set list\nひかりのまち/AZKi\nI can't control myself/AZKi\nリアルメランコリー/AZKi\nフェリシア/AZKi\nCreating world/AZKi\n"
-				},
-				{
-					"video":"58BJsUzMYo8",
-					"start":"2217",
-					"end":"3616",
-					"note":"Set list\nI can't control myself/AZKi\nひかりのまち/AZKi\nフェリシア/AZKi\nStarry Regrets/AZKi\nCreating world/AZKi\n"
-				},
-				{
-					"video":"ikpXTH-4SPA",
-					"start":"1983",
-					"end":"3750",
-					"note":"Set list\nリアルメランコリー/AZKi\nフェリシア/AZKi\nFake.Fake.Fake/AZKi\nI can't control myself/AZKi\nいのち/AZKi\nCreating world/AZKi\n"
-				},
-				{
-					"video":"A6RF2RgcOUI",
-					"start":"2464",
-					"end":"3905",
-					"note":"Set list\nStarry Regrets/AZKi\nリアルメランコリー/AZKi\nシットデイズ/AZKi\nFake.Fake.Fake/AZKi\nCreating world/AZKi\n"
-				},
-				{
-					"video":"XAmXi1HDMD0",
-					"start":"3005",//3005
-					"end":"4990",
-					"note":"Set list\nさよならヒーロー/AZKi\nFake.Fake.Fake/AZKi\nハートビート/AZKi\nいのち/AZKi\nCreating world/AZKi\nfrom A to Z/AZKi\n"
-				}
-			]
-		}.contents
+var liveData = [];
+$.getJSON('LiveData.json', function(data){
+	liveData = data['contents'];
+});
 // 2. This code loads the IFrame Player API code asynchronously.
 
 var tag = document.createElement('script');
