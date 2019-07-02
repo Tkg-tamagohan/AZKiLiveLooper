@@ -16,8 +16,6 @@ var player;
 var count = 0;
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
-		height: '480',
-		width: '853',
 		videoId: liveData[count].video,
 		playerVars:{
 			start: liveData[count].start,
