@@ -44,5 +44,6 @@ header h1 {
 #player h2 {
 	color: #fff;
 	text-align: center;
+	line-height: 480px;
 	z-index: -1;
 }
