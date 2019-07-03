@@ -44,10 +44,10 @@ header h1 {
 }
 
 .noButton:hover {
-	background-color: #f00;
-	color: #000;
-	width: 110px;
-	margin: 0 -5px;
+	background-color: #000;
+	color: #f00;
+	width: 120px;
+	margin: 0 -10px;
 	cursor: pointer;
 	border-radius: 2px;
 }
