@@ -19,6 +19,8 @@ header h1 {
 .noButton {
 	width: 117px;
 	height: 40px;
+	font-family: 'Oswald';
+	font-size: 22px;
 
 }
 
