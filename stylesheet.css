@@ -27,7 +27,7 @@ header h1 {
 }
 
 .noButton {
-	-webkit-transition: all .2s;
+	-webkit-transition: all .25s;
 }
 
 .noButton {
@@ -46,10 +46,7 @@ header h1 {
 .noButton:hover {
 	background-color: #000;
 	color: #f00;
-	width: 120px;
-	margin: 0 -10px;
 	cursor: pointer;
-	border-radius: 2px;
 }
 
 #player h2 {
