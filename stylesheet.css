@@ -1,5 +1,5 @@
 input[type="button"]{
-	-webkit-appearance: none;
+	appearance: none;
 	border-radius: none;
 }
 
@@ -32,10 +32,7 @@ header h1 {
 }
 
 .noButton {
-	-webkit-transition: all .25s;
-}
-
-.noButton {
+	transition: all .25s;
 	display: inline-block;
 	width: 70px;
 	height: 60px;
