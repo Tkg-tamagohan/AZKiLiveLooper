@@ -2,6 +2,7 @@ var liveData = [];
 $.getJSON('./LiveData.json', function (data) {
 	liveData = data['contents'];
 });
+
 // 2. This code loads the IFrame Player API code asynchronously.
 
 var tag = document.createElement('script');
@@ -43,7 +44,7 @@ function onPlayerStateChange(event) {
 	if (event.data == 0 && !done) {
 		count += 1;
 		done = true;
-		if (count > 6) {
+		if (!(count < liveData.length)) {
 			count = 0;
 		}
 
