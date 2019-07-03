@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>AZKi Live Looper</title>
-		<meta charset="utf-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-		<link rel="stylesheet" href="stylesheet.css">
-	</head>
-	<body>
-		<script type="text/javascript" src="player.js"></script>
-		<div id="player"></div>
-		<br/>
+
+<head>
+	<title>AZKi Live Looper</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+	<script type="text/javascript" src="player.js"></script>
+	<div id="player">
+		<h2>動画が表示されないときはリロード</h2>
+	</div>
+	<br />
+	<div class="noButtons">
 		<input class="noButton" type="button" value="#1" onclick="setLive(0)">
 		<input class="noButton" type="button" value="#2" onclick="setLive(1)">
 		<input class="noButton" type="button" value="#3" onclick="setLive(2)">
@@ -17,5 +22,7 @@
 		<input class="noButton" type="button" value="#5" onclick="setLive(4)">
 		<input class="noButton" type="button" value="#6" onclick="setLive(5)">
 		<input class="noButton" type="button" value="#7" onclick="setLive(6)">
-	</body>
+	</div>
+</body>
+
 </html>
