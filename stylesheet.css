@@ -8,6 +8,10 @@ header h1 {
 	font-family: 'Oswald';
 	text-align: center;
 	cursor: default;
+	margin: auto;
+	width: 200px;
+	-webkit-transition: all .2s;
+
 }
 
 #player {
@@ -19,6 +23,7 @@ header h1 {
 
 .noButtons {
 	text-align: center;
+	cursor: default;
 }
 
 .noButton {
@@ -27,9 +32,10 @@ header h1 {
 
 .noButton {
 	display: inline-block;
-	width: 80px;
+	width: 70px;
 	height: 60px;
-	margin: 0 10px;
+	margin: 0 15px;
+	color: #999;
 	font-family: 'Oswald';
 	font-size: 22px;
 	background-color: #900;
@@ -39,7 +45,11 @@ header h1 {
 
 .noButton:hover {
 	background-color: #f00;
-	cursor: pointer
+	color: #000;
+	width: 110px;
+	margin: 0 -5px;
+	cursor: pointer;
+	border-radius: 2px;
 }
 
 #player h2 {
