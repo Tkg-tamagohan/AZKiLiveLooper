@@ -14,9 +14,6 @@ header h1 {
 	text-align: center;
 	cursor: default;
 	margin: auto;
-	width: 200px;
-	-webkit-transition: all .2s;
-
 }
 
 #player {
