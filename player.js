@@ -1,5 +1,5 @@
 var liveData = [];
-$.getJSON('./LiveData.json', function(data){
+$.getJSON('./LiveData.json', function (data) {
 	liveData = data['contents'];
 });
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -14,10 +14,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 var count = 0;
+
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
 		videoId: liveData[count].video,
-		playerVars:{
+		playerVars: {
 			start: liveData[count].start,
 			end: liveData[count].end
 		},
@@ -37,31 +38,32 @@ function onPlayerReady(event) {
 //    The function indicates that when playing a video (state=1)
 //    the player should play for six seconds and then stop.
 var done = false;
-function onPlayerStateChange(event){
-	if(event.data == 0 && !done){
+
+function onPlayerStateChange(event) {
+	if (event.data == 0 && !done) {
 		count += 1;
 		done = true;
-		if(count > 6){
+		if (count > 6) {
 			count = 0;
 		}
-		
+
 		player.loadVideoById({
 			videoId: liveData[count].video,
-			startSeconds:Number(liveData[count].start),
-			endSeconds:Number(liveData[count].end)
+			startSeconds: Number(liveData[count].start),
+			endSeconds: Number(liveData[count].end)
 		});
-	}else
-		if(event.data == 1 && done){
-			done = false;
-		}
+	} else
+	if (event.data == 1 && done) {
+		done = false;
+	}
 }
 
-var setLive = function(Num){
+var setLive = function (Num) {
 	count = Num;
 	player.loadVideoById({
 		videoId: liveData[count].video,
-		startSeconds:Number(liveData[count].start),
-		endSeconds:Number(liveData[count].end)
+		startSeconds: Number(liveData[count].start),
+		endSeconds: Number(liveData[count].end)
 	});
-	
+
 }

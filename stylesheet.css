@@ -1,16 +1,27 @@
-body{
+body {
 	background-color: black;
+	width: auto;
 }
+
+header h1 {
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+
+}
+
 #player {
-	width: 100%;
+	width: 853px;
 	height: 480px;
+	display: block;
+	margin: auto;
 }
 
 .noButton {
 	width: 117px;
 	height: 40px;
+
 }
 
-h2{
+h2 {
 	color: #fff;
 }
