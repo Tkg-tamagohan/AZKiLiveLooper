@@ -1,5 +1,5 @@
 input[type="button"]{
-	appearance: none;
+	-webkit-appearance: none;
 	border-radius: none;
 }
 
