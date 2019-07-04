@@ -66,5 +66,22 @@ var setLive = function (Num) {
 		startSeconds: Number(liveData[count].start),
 		endSeconds: Number(liveData[count].end)
 	});
+	makeTable(liveData[count].setList, "timeTable");
+};
 
+// 表の動的作成
+function makeTable(data, tableId) {
+	var table = document.getElementById(tableId);
+	var i;
+	
+	table.innerHTML = "";
+
+	for (i = 0; i < data.length; i++) {
+		table.innerHTML += '<tr><td style="width: 80px">#' + (i+1) + '</td><td>' + data[i].title + '</td><td>' + data[i].time + '</td></tr>';
+	}
 }
+
+window.onload = function () {
+	// 表の動的作成
+	makeTable(liveData[count].setList, "timeTable");
+};

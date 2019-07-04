@@ -1,11 +1,12 @@
-input[type="button"]{
+input[type="button"] {
 	-webkit-appearance: none;
 	border-radius: none;
 }
 
 body {
 	background-color: black;
-	width: auto;
+	width: 900px;
+	margin: auto;
 }
 
 header h1 {
@@ -55,3 +56,15 @@ header h1 {
 	z-index: -1;
 	cursor: default;
 }
+
+#timeTable, #timeTableTitle {
+	margin: 10px 0 0 80px;
+	color: #f00;
+	font-size: 40px;
+	font-family: 'Nico Moji';
+}
+
+#timeTable {
+	margin: 0 0 0 60px;
+}
+
