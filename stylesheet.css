@@ -90,16 +90,16 @@ header h1 {
 	height: auto;
 }
 
-/*
 footer {
 	position: relative;
-	top: 60px;
+	top: 24px;
+	font-family: 'Nico Moji';
 }
 
 .hidden_box {
 	position: relative;
 	left: 80px;
-	font-size: 28px;
+	font-size: 24px;
 }
 
 .hidden_box input{
@@ -107,9 +107,30 @@ footer {
 }
 
 .hidden_box label{
-	color: #f00;
-	font-family: 'Nico Moji';
+	color: #b00;
 	cursor: pointer;
+	transition: .25s;
 }
-*/
 
+.hidden_box label:hover {
+	color: #f00;
+}
+
+#HowtoUseContent {
+	color: #dd0000;
+	margin-left: 30px;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: .25s;
+}
+
+.hidden_box input:checked ~ #HowtoUseContent {
+	height: 110px;
+	opacity: 1;
+}
+
+ul {
+	margin: 0 0;
+}
