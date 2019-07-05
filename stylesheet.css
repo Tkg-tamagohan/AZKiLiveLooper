@@ -9,15 +9,22 @@ body {
 	margin: auto;
 }
 
+header {
+	position: relative;
+	cursor: default;
+	height: 60px;
+}
+
 header h1 {
 	color: #fff;
 	font-family: 'Oswald';
 	text-align: center;
-	cursor: default;
 	margin: auto;
+	text-height: 60px;
 }
 
 #player {
+	position: relative;
 	width: 853px;
 	height: 480px;
 	display: block;
@@ -25,6 +32,7 @@ header h1 {
 }
 
 .noButtons {
+	position: relative;
 	text-align: center;
 	cursor: default;
 }
@@ -57,14 +65,51 @@ header h1 {
 	cursor: default;
 }
 
-#timeTable, #timeTableTitle {
-	margin: 10px 0 0 80px;
-	color: #f00;
+#tableWrapper {
+	position: relative;
+	display: block;
+	width: 800px;
+	top: 10px;
+	left: 120px;
+	cursor: default;
+}
+
+#timeTable,
+#timeTableTitle {
+	color: #d00;
 	font-size: 40px;
 	font-family: 'Nico Moji';
 }
 
-#timeTable {
-	margin: 0 0 0 60px;
+#timeTableTitle {
+	margin: 0;
 }
+
+#timeTable {
+	margin-left: -30px;
+	height: auto;
+}
+
+/*
+footer {
+	position: relative;
+	top: 60px;
+}
+
+.hidden_box {
+	position: relative;
+	left: 80px;
+	font-size: 28px;
+}
+
+.hidden_box input{
+	display: none;
+}
+
+.hidden_box label{
+	color: #f00;
+	font-family: 'Nico Moji';
+	cursor: pointer;
+}
+*/
 
