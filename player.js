@@ -48,11 +48,7 @@ function onPlayerStateChange(event) {
 			count = 0;
 		}
 
-		player.loadVideoById({
-			videoId: liveData[count].video,
-			startSeconds: Number(liveData[count].start),
-			endSeconds: Number(liveData[count].end)
-		});
+		setLive(count)
 	} else
 	if (event.data == 1 && done) {
 		done = false;
@@ -77,7 +73,7 @@ function makeTable(data, tableId) {
 	table.innerHTML = "";
 
 	for (i = 0; i < data.length; i++) {
-		table.innerHTML += '<tr><td style="width: 80px">#' + (i+1) + '</td><td>' + data[i].title + '</td><td>' + data[i].time + '</td></tr>';
+		table.innerHTML += '<tr><td style="width: 80px">#' + (i+1) + '</td><td><a  href="#">' + data[i].title + '</a></td><td>' + '' + '</td></tr>';
 	}
 }
 

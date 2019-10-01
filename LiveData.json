@@ -82,6 +82,28 @@
 				{"title":"Creating world/AZKi","time":""},
 				{"title":"from A to Z/AZKi","time":""},
 			]
+		},
+        {
+			"video":"flbnSvDohAA",
+			"start":"123",
+			"end":"1194",
+			"setList":[
+				{"title":"Creating world/AZKi","time":""},
+				{"title":"ヒロイックヒロイン/ときのそら","time":""}
+			]
+		},
+        {
+			"video":"BgEC1qiOY3E",
+			"start":"577",//3005
+			"end":"2478",
+			"setList":[
+				{"title":"Fake.Fake.Fake/AZKi","time":""},
+				{"title":"虹を駆け抜けて/AZKi","time":""},
+				{"title":"リアルメランコリー/AZKi","time":""},
+				{"title":"のんびりと、/AZKi","time":""},
+                {"title":"without U/AZKi","time":""},
+				{"title":"from A to Z/AZKi","time":""},
+			]
 		}
 	]
 }

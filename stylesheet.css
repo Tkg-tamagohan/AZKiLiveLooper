@@ -42,7 +42,7 @@ header h1 {
 	display: inline-block;
 	width: 70px;
 	height: 60px;
-	margin: 0 15px;
+	margin: 0 10px;
 	color: #999;
 	font-family: 'Oswald';
 	font-size: 22px;
@@ -78,7 +78,8 @@ header h1 {
 #timeTableTitle {
 	color: #d00;
 	font-size: 40px;
-	font-family: 'Nico Moji';
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
 }
 
 #timeTableTitle {
@@ -88,6 +89,12 @@ header h1 {
 #timeTable {
 	margin-left: -30px;
 	height: auto;
+}
+
+#timeTable a{
+    color: #d00;
+    text-decoration:none;
+    cursor: default;
 }
 
 footer {
@@ -134,3 +141,4 @@ footer {
 ul {
 	margin: 0 0;
 }
+
