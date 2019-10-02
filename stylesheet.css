@@ -31,6 +31,32 @@ header h1 {
 	margin: auto;
 }
 
+.caution{
+    color: #600;
+	font-size: 22px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    text-align: right;
+}
+
+.caution a{
+    color: #600;
+    text-decoration:none;
+    cursor: default;
+}
+
+.caution p:hover{
+    color: #d00;
+}
+
+.caution a:hover{
+    color: #d00;
+}
+
+.caution p{
+    margin: -0px;
+}
+
 .noButtons {
 	position: relative;
 	text-align: center;
